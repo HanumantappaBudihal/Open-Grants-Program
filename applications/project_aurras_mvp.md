@@ -94,6 +94,8 @@ As a part of Web 3 Community and Ecosystem
 * Muhammed Irfan K - Team Lead, Fullstack Developer, CTO & Co-Founder - HugoByte AI Labs
 * Hanumantappa Budihal - Solutions Architect, DevOps - HugoByte AI Labs	
 
+We will be hiring two Rust Developers
+
 ### Contact
 * **Contact Name:** Muhammed Irfan K
 * **Contact Email:** muhammedirfan@hugobyte.com
@@ -110,7 +112,7 @@ CIN: U72900KA2020PTC140106
 ### Team's experience
 * Dr. C. Pethuru Raj Ph.D  
 Dr. C. Pethuru Raj is currently working as Chief Architect and Vice president in the Site Reliability Engineering (SRE) Center of Excellence, Reliance Jio Infocomm Ltd. (RJIL), Bangalore. Previously worked as a cloud infrastructure architect in the IBM Global Cloud Center Of Excellence (CoE), IBM India Bangalore for four years. Before that, He had a long stint as TOGAF-certified enterprise architecture (EA) consultant in Wipro Consulting Services (WCS) Division, Also worked as a lead architect in the corporate research (CR) division of Robert Bosch Bangalore. In total, He has gained
-more than 17 years of IT industry experience and 8 years of research experience. Completed the CSIR-sponsored Ph.D. degree at Anna University, Chennai, and continued with the UGC-sponsored postdoctoral research in the Department of Computer Science and Automation, Indian Institute of Science, Bangalore. Thereafter, He was granted a couple of international research fellowships (JSPS and JST) to work as a research scientist for 3.5 years in two leading Japanese universities. Published more than 30 research papers in peer-reviewed journals such as IEEE, ACM, Springer-Verlag, Inderscience, etc. Having authored 8 books thus far and focus on some of the emerging technologies such as IoT, Cognitive Analytics, Blockchain, Digital Twin, Docker Containerization, Data Science, Microservices Architecture, fog/edge computing, etc. Also have contributed more than 30 book chapters thus far for various technology books edited by highly acclaimed and accomplished professors and professionals. He is currently advising the team at HugoByte AI Labs on impactful technology innovations.
+more than 17 years of IT industry experience and 8 years of research experience. Completed the CSIR-sponsored Ph.D. degree at Anna University, Chennai, and continued with the UGC-sponsored postdoctoral research in the Department of Computer Science and Automation, Indian Institute of Science, Bangalore. Thereafter, He was granted a couple of international research fellowships (JSPS and JST) to work as a research scientist for 3.5 years in two leading Japanese universities. Published more than 30 research papers in peer-reviewed journals such as IEEE, ACM, Springer-Verlag, Inderscience, etc. Having authored 25 books thus far that focus on some of the emerging technologies such as IoT, Cognitive Analytics, Blockchain, Digital Twin, Containerization, Data Science, Microservices Architecture, fog/edge computing, etc. Also have contributed more than 30 book chapters thus far for various technology books edited by highly acclaimed and accomplished professors and professionals. He is currently advising the team at HugoByte AI Labs on impactful technology innovations.
 
 * Muhammed Irfan K  
 Muhammed Irfan K is a strategic thinker and implementer of innovative ideas with
@@ -121,7 +123,7 @@ Development, Microservices, Machine Learning.
 Hanumantappa Budihal has 4 years of experience as an Application Developer and Azure DevOps Engineer. His technical skills include .NET Core Framework, Azure DevOps, SQL Developer, ASP .NET MVC, REST Web API, WPF, Microsoft Azure, Cognitive Services, Algorithms Design for a complex business requirement, and Watson Discovery, with good knowledge of Application Architecture and Design pattern implementation and data analysis skills. He is a hard worker moreover eager to learn new skills. He has also worked on cognitive application development using various IBM Bluemix services such as conversation, Natural language understanding, Watson discovery, and developed few chatbots using Api.ai and Microsoft bot framework. He is currently working as a Solutions Architect in HugoByte AI Labs.
  
 ### Team Code Repos
-* https://github.com/i7326/hackusama (Hackusama Submission)
+* https://github.com/i7326/hackusama ([Hackusama Submission](https://devpost.com/software/contact-tracing-chain))
 * https://github.com/hugobyte
 * https://github.com/MuhammedIrfan
 * https://github.com/HanumantappaBudihal  
@@ -133,44 +135,106 @@ Hanumantappa Budihal has 4 years of experience as an Application Developer and A
 
 ## Development Roadmap :nut_and_bolt: 
 
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
-
-For each milestone:
-* Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* Please include total amount of funding requested per milestone.
-* Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
-* Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-* Please commit to providing a dockerfiles for the delivery of your project. 
-* Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
-* Deliverables 0a-0d are mandatory and should not be removed, unless you explicitly specify a reason within the PR's `Additional Notes` section (e.g. Milestone X is research oriented and as such there is no code to test)
-
 ### Overview
 * **Description** Development of Project Aurras - MVP 
 * **Total Estimated Duration:** 3.5 months
-* **Full-time equivalent (FTE):**  3
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission. (e.g. 0.80 BTC)
+* **Full-time equivalent (FTE):**  5
+* **Total Costs:** 
 
 ### Milestone 1 — Event Source - Substrate Event Feed
-* **Estimated Duration:** 30 Days
-* **FTE:**  1.5
-* **Costs:** 0.35 BTC
+* **Estimated Duration:** 
+* **FTE:**  
+* **Costs:** 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | MIT  |
-| 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Event Post Action Deployment guide, Openwhisk Setup Documentation |
+| 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Event Post Action Deployment guide, Openwhisk Setup Documentation, Readme file |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1a. | Substrate Event Feed: Configuration | Reading Configuration based on Environment, Override Configuration if Environment Variables provided. Configrations for Chain endpoint, types, Openwhisk Endpoint, Openwhisk Auth Key, Trigger Endpoint |
-| 1b. | Substrate Event Feed: Chain Module | Connects to the chain, Inject any custom type provided, Subscribes to system.events |  
+| 1a. | Substrate Event Feed: Configuration | Reading Configuration based on Environment, Override Configuration if Environment Variables provided, Configrations for Chain endpoint Sections and Methods from extrinsic to Exclude, types, Openwhisk Endpoint, Openwhisk Auth Key, Trigger Endpoint, Kafka Topic and Brokers |
+| 1b. | Substrate Event Feed: Chain Module | Connects to the chain, Add custom type to chain intialization if provided, Subscribes to system.events |  
 | 1c. | Substrate Event Feed: Event Module | Filters Events based on excludes provided, Post Events to trigger Endpoint |  
-| 2. | Event Manager: Event Post Action | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1d. | Substrate Event Feed: Docker Image | Dockerfile for Containerization  |  
+| 1e. | Substrate Event Feed: Docker Compose Configuration | Docker Compose Configuration  |
+| 2. | Event Manager: Event Post Action | Minimal JS Implementation of Event POST Action with Payload as Kafka Topic, Broker and Event Data such as section, method and Event Payload |
 
-### Milestone 2 Example — Additional features
-...
+
+### Milestone 2 — Event Manager - Phase 1
+* **Estimated Duration:** 
+* **FTE:**  
+* **Costs:** 
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | MIT  |
+| 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Kafka and Zookeeper Deployment guide, wskdeploy guide, Readme file |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |  
+| 1. | Kafka Provider: Fork | Fork Existing [openwhisk-package-kafka](https://github.com/apache/openwhisk-package-kafka/) |
+| 2a. | Event Manager: Event Source Registration | Register Source with Chain Name, Chain Specification, Create Unique topic for provided Section-Method, Return created topics - Section-Method Map |
+| 2b. | Event Manager: Kafka provider feed action | Implement CouchDB integration, Connect DB provided through environment variable, Add CREATE, READ, UPDATE, DELETE lifecycle methods for trigger, Validate parameters (topic, broker, isJSONData, isBinaryValue, isBinaryKey), Record topic and related trigger to DB on CREATE lifecycle |
+| 2c. | Event Manager: Deployment Config | Deployment Config for [wskdeploy](https://github.com/apache/openwhisk-wskdeploy) tool | 
+| 2d. | Event Manager: Intermediate Container | Dockerfile for Containerization, Container with wsk cli and wskdeploy util, Script to add Openwhisk auth key, Deploy Openwhisk Actions and Create Triggers and Rules |
+| 2e. | Event Manager: Docker Compose Configuration | Docker Compose Configuration  |
+
+### Milestone 3 — Event Manager - Phase 2
+* **Estimated Duration:** 
+* **FTE:**  
+* **Costs:** 
+
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | MIT  |
+| 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Readme file |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 1a. | Event Manager: Kafka Produce Action | Validate for parameters, Connect to provided brokers, Produce data to provided topic, Add deployment config to wskdeploy config |
+| 1b. | Event Manager: Kafka provider feed action | Delete trigger from DB on DELETE lifecycle, Read trigger from DB on READ lifecycle, Update trigger from DB on UPDATE lifecycle |
+| 2a. | Substrate Event Feed: Configuration | CouchDB Config, Available Sections and Methods of the chain to create unique topics |
+| 2b. | Substrate Event Feed: Event Source Registration | CouchDB Integration, Save Unique ID in DB for topic provided through Event Manager: Event Source Registration | 
+ 
+
+### Milestone 4 — Workflow Composer - Phase 1
+* **Estimated Duration:** 
+* **FTE:**  
+* **Costs:** 
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | MIT  |
+| 0b. | Documentation | Documentation includes Inline Code Documentation, Composer Configuration Documentation, Readme file |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 1a. | Workflow Composer: YAML Config Specification | JSON Schema, Configuration Specification |
+| 1a. | Workflow Composer: YAML Config Parser | Parse the config file with the specification provided |
+| 1b. | Workflow Composer: Build Script | Convert YAML to struct |
+| 1c. | Workflow Composer: Rust Openwhisk Client Library | Minimal Implementation to Openwhisk Rust Client |
+| 1d. | Workflow Composer: Composer | Wrapper Library to include plugging operators |
+| 1e. | Workflow Composer: Pipe Operator | Operator Interface to connect other operators |
+
+
+### Milestone 5 — Workflow Composer - Phase 2
+* **Estimated Duration:** 
+* **FTE:**  
+* **Costs:** 
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | MIT  |
+| 0b. | Documentation | Documentation includes Inline Code Documentation, Operator Documentation, Readme file |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 1a. | Workflow Composer: Derive Macro | Procedural Macro to build rust code from the Struct created from the YAML file |
+| 1b. | Workflow Composer: Concat Operator | Operator to concat the tasks in a sequential order |
+| 1c. | Workflow Composer: Map Operator | Operator transform the output of a task |
+
+### Milestone 6 — API/Backend
+* **Estimated Duration:** 
+* **FTE:**  
+* **Costs:** 
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | MIT  |
+| 0b. | Documentation | Documentation includes Inline Code Documentation, Operator Documentation, Readme file |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 
 ## Future Plans
 Please include the team's long-term plans and intentions.
