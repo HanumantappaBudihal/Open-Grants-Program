@@ -44,10 +44,10 @@ a good solution for large scale message processing applications.
 6. Go
 
 #### Components
-1. Event Sources (Substrate Event Feed)  
+1. **Event Sources (Substrate Event Feed)**  
 This is the source for events from the chain which will be sent to the openwhisk system. The MVP event source will be implemented using [polkadot-js/api](https://github.com/polkadot-js/api). For the actual implementation, We will be using a custom version of the substrate archive. Substrate archive will be indexing the
 blocks and an event actor will be decoding the events and data from the block and posting them to the OpenWhisk system. The indexer will use a NoSQL database to store the last indexed block and metadata. Using the substrate indexer as our event source will help us in solving many challenges ranging from fault tolerance to scalability to uniquely identifying multiple events with the same payload within a single block. The indexer will be connected to a substrate-based chain and RocksDB where the chain data is stored. When a new block is produced by the chain, the indexer collects the raw blocks from the RocksDB and is sent to the event actor. The event actor processes the block. The block data is decoded using the parity scale codec and mapped with the data types provided to the runtime. Once the event is decoded, the event actor posts a trigger to the event trigger manager.
-2. Event Trigger Manager  
+2. **Event Trigger Manager**  
 Event trigger manager is composed of multiple actions, database to store trigger URLs and
 their respective auths, and Kafka provider, consumer and producer. Once the event manager receives an event from the event feed, this data is produced to a topic. The feed action in the trigger manager lets the user hook into the system so once an event is indexed to a particular topic, it can invoke a particular action. While creating the workflow, users can choose the event trigger as feed and provide necessary parameters from which chain it should be listening to and from which block it should start listening. Under the hood, a feed action is
 invoked with create lifecycle, which accepts the mandatory parameters the lifecycle, auth,
@@ -55,7 +55,7 @@ trigger name, and other optional parameters of the event source. The feed action
 related actions of creating the entry in the database, adding to the Kafka consumer group, etc. The next component in the event trigger manager is a persistent connection to Kafka where it is used to produce and consume the stream of data. Once data is received in Kafka, the event trigger manager invokes the action to check the consumer groups for that particular
 topic and if found any the trigger for the users under that particular group is invoked, which in
 turn invokes the workflow action.
-3. Workflow Composer  
+3. **Workflow Composer**  
 Workflow composer consists of an async Rust library to compose multiple triggers,
 deployment configuration generator, and whisk deployment tool. For creating the workflow,
 the only input is the configuration file which is a YAML file. The workflow composition is laid out
@@ -63,7 +63,7 @@ in the YAML which in turn takes care of the deployment and composing the trigger
 workflow is deployed to a namespace it creates a specific topic unique workflow id in Kafka.
 Workflow configuration comprises the input URL of workflow tasks, primarily GitHub repo,
 the sequence of processing tasks, and argument structure. Arguments must match the task input parameters.
-4. API Gateway and Backend Service  
+4. **Web API Gateway and Backend Service** 
 This is the end user facing component to utilize the workflow. This component comprises of a
 backend application which is responsible for user registration, selecting the workflow,
 managing / creating workflow using friendly APIs, providing input parameters. API gateway /
@@ -82,7 +82,7 @@ Similar projects
 What makes us different is
 
 As a part of Web 3 Community and Ecosystem
-* We will be providing first class support to connect blockchains
+* First class support to connect blockchains
 * Deployment and definition of workflows will be done through easy to write YAML configuration.
 * Workflow tasks can be written in multiple languages -  NodeJS, Go, Java, Scala, PHP, Python, Ruby, Ballerina, .NET and Rust (We prefer and Recommend WASM compatible Rust)
 * First class support to MQTT Endpoints.
@@ -150,7 +150,7 @@ Hanumantappa Budihal has 4 years of experience as an Application Developer and A
 | ------------- | ------------- | ------------- |
 | 0a. | License | MIT  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Event Post Action Deployment guide, Openwhisk Setup Documentation, Readme file |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 1a. | Substrate Event Feed: Configuration | Reading Configuration based on Environment, Override Configuration if Environment Variables provided, Configrations for Chain endpoint Sections and Methods from extrinsic to Exclude, types, Openwhisk Endpoint, Openwhisk Auth Key, Trigger Endpoint, Kafka Topic and Brokers |
 | 1b. | Substrate Event Feed: Chain Module | Connects to the chain, Add custom type to chain intialization if provided, Subscribes to system.events |  
 | 1c. | Substrate Event Feed: Event Module | Filters Events based on excludes provided, Post Events to trigger Endpoint |  
@@ -168,7 +168,7 @@ Hanumantappa Budihal has 4 years of experience as an Application Developer and A
 | ------------- | ------------- | ------------- |
 | 0a. | License | MIT  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Kafka and Zookeeper Deployment guide, wskdeploy guide, Readme file |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |  
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests |  
 | 1. | Kafka Provider: Fork | Fork Existing [openwhisk-package-kafka](https://github.com/apache/openwhisk-package-kafka/) |
 | 2a. | Event Manager: Event Source Registration | Register Source with Chain Name, Chain Specification, Create Unique topic for provided Section-Method, Return created topics - Section-Method Map |
 | 2b. | Event Manager: Kafka provider feed action | Implement CouchDB integration, Connect DB provided through environment variable, Add CREATE, READ, UPDATE, DELETE lifecycle methods for trigger, Validate parameters (topic, broker, isJSONData, isBinaryValue, isBinaryKey), Record topic and related trigger to DB on CREATE lifecycle |
@@ -186,7 +186,7 @@ Hanumantappa Budihal has 4 years of experience as an Application Developer and A
 | ------------- | ------------- | ------------- |
 | 0a. | License | MIT  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Readme file |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 | 1a. | Event Manager: Kafka Produce Action | Validate for parameters, Connect to provided brokers, Produce data to provided topic, Add deployment config to wskdeploy config |
 | 1b. | Event Manager: Kafka provider feed action | Delete trigger from DB on DELETE lifecycle, Read trigger from DB on READ lifecycle, Update trigger from DB on UPDATE lifecycle |
 | 2a. | Substrate Event Feed: Configuration | CouchDB Config, Available Sections and Methods of the chain to create unique topics |
@@ -202,13 +202,13 @@ Hanumantappa Budihal has 4 years of experience as an Application Developer and A
 | ------------- | ------------- | ------------- |
 | 0a. | License | MIT  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Composer Configuration Documentation, Readme file |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 | 1a. | Workflow Composer: YAML Config Specification | JSON Schema, Configuration Specification |
-| 1a. | Workflow Composer: YAML Config Parser | Parse the config file with the specification provided |
-| 1b. | Workflow Composer: Build Script | Convert YAML to struct |
-| 1c. | Workflow Composer: Rust Openwhisk Client Library | Minimal Implementation to Openwhisk Rust Client |
-| 1d. | Workflow Composer: Composer | Wrapper Library to include plugging operators |
-| 1e. | Workflow Composer: Pipe Operator | Operator Interface to connect other operators |
+| 1b. | Workflow Composer: YAML Config Parser | Parse the config file with the specification provided |
+| 1c. | Workflow Composer: Build Script | Convert YAML to struct |
+| 1d. | Workflow Composer: Rust Openwhisk Client Library | Minimal Implementation to Openwhisk Rust Client |
+| 1e. | Workflow Composer: Composer | Wrapper Library to integrate plugging operators and Openwhisk Client |
+| 1f. | Workflow Composer: Pipe Operator | Operator Interface to connect other operators |
 
 
 ### Milestone 5 — Workflow Composer - Phase 2
@@ -220,12 +220,12 @@ Hanumantappa Budihal has 4 years of experience as an Application Developer and A
 | ------------- | ------------- | ------------- |
 | 0a. | License | MIT  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Operator Documentation, Readme file |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 | 1a. | Workflow Composer: Derive Macro | Procedural Macro to build rust code from the Struct created from the YAML file |
 | 1b. | Workflow Composer: Concat Operator | Operator to concat the tasks in a sequential order |
 | 1c. | Workflow Composer: Map Operator | Operator transform the output of a task |
 
-### Milestone 6 — API/Backend
+### Milestone 6 — Web API/Backend
 * **Estimated Duration:** 
 * **FTE:**  
 * **Costs:** 
@@ -234,10 +234,25 @@ Hanumantappa Budihal has 4 years of experience as an Application Developer and A
 | ------------- | ------------- | ------------- |
 | 0a. | License | MIT  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Operator Documentation, Readme file |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 1a. | Web API: Workflow Registration | API Exposed as a part of workflow deployment, Workflow will be registered and made available to specific namespace |
+| 1b. | Web API: User Registration | Basic User Registration API to register user to the system |
+| 1c. | Web API: User Workflow Management | User to select workflow and provide argument values, Pause Workflow, Delete Workflow |
+| 2a. | Workflow Composer:  Workflow Registration | Action to communicate to Web API: Workflow Registration with workflow and arguments specification |
+
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
+Immediate Plans in the timeline Includes
+* Develop full fledge system
+* Implement Custom Version of Substrate Archive
+* Add more operators
+* Add Analytics and Monitoring  
+* MQTT Endpoints  
+* Decentralized push notification  
+
+Our Roadmap includes
+* Decentralized Pub/Sub Network to replace Apache Kafka in Aurras
+* WASI Runtime for Openwhisk
 
 ## Additional Information :heavy_plus_sign: 
 Any additional information that you think is relevant to this application that hasn't already been included.
