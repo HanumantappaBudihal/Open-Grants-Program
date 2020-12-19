@@ -63,7 +63,7 @@ in the YAML which in turn takes care of the deployment and composing the trigger
 workflow is deployed to a namespace it creates a specific topic unique workflow id in Kafka.
 Workflow configuration comprises the input URL of workflow tasks, primarily GitHub repo,
 the sequence of processing tasks, and argument structure. Arguments must match the task input parameters.
-4. **Web API Gateway and Backend Service** 
+4. **Web API Gateway and Backend Service**   
 This is the end user facing component to utilize the workflow. This component comprises of a
 backend application which is responsible for user registration, selecting the workflow,
 managing / creating workflow using friendly APIs, providing input parameters. API gateway /
