@@ -137,7 +137,7 @@ Hanumantappa Budihal has 4 years of experience as an Application Developer and A
 
 ### Overview
 * **Description** Development of Project Aurras - MVP 
-* **Total Estimated Duration:** 3.5 months
+* **Total Estimated Duration:** 
 * **Full-time equivalent (FTE):**  5
 * **Total Costs:** 
 
@@ -243,7 +243,7 @@ Hanumantappa Budihal has 4 years of experience as an Application Developer and A
 
 ## Future Plans
 Immediate Plans in the timeline Includes
-* Develop full fledge system
+* Develop full fledged system
 * Implement Custom Version of Substrate Archive
 * Add more operators
 * Add Analytics and Monitoring  
