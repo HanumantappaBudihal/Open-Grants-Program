@@ -73,7 +73,7 @@ As a part of Web 3 Community and Ecosystem
 * Muhammed Irfan K - Team Lead, Fullstack Developer, CTO & Co-Founder - HugoByte AI Labs
 * Hanumantappa Budihal - Solutions Architect, DevOps - HugoByte AI Labs	
 
-We will be hiring one Rust Developer
+We will be hiring 2 Rust Developer
 
 ### Contact
 * **Contact Name:** Muhammed Irfan K
