@@ -156,7 +156,7 @@ Repos for further reference
 | 3d. | Event Manager: Intermediate Container | Dockerfile for Containerization, Container with wsk cli and wskdeploy util, Script to add Openwhisk auth key, Deploy Openwhisk Actions and Create Triggers and Rules |
 | 3e. | Event Manager: Docker Compose Configuration | Docker Compose Configuration |
 
-### Milestone 3 — Event Manager - Parts 2
+### Milestone 3 — Event Manager - Part 2
 * **Estimated Duration:** 20 Days
 * **FTE:** 3
 * **Costs:** 0.33 BTC

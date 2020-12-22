@@ -156,7 +156,7 @@ Repos for further reference
 | 3d. | Event Manager: Intermediate Container | Dockerfile for Containerization, Container with wsk cli and wskdeploy util, Script to add Openwhisk auth key, Deploy Openwhisk Actions and Create Triggers and Rules |
 | 3e. | Event Manager: Docker Compose Configuration | Docker Compose Configuration |
 
-### Milestone 3 — Event Manager - Parts 2
+### Milestone 3 — Event Manager - Part 2
 * **Estimated Duration:** 20 Days
 * **FTE:** 3
 * **Costs:** 0.33 BTC
@@ -172,7 +172,7 @@ Repos for further reference
 | 2a. | Substrate Event Feed: Configuration | CouchDB Config, Available Sections and Methods of the chain to create unique topics |
 | 2b. | Substrate Event Feed: Event Source Registration | Integrate with DB service - CouchDB, Save Unique ID in DB for topic provided through Event Manager: Event Source Registration | 
 
-### Milestone 4 — Workflow Composer - Phase 1
+### Milestone 4 — Workflow Composer - Part 1
 * **Estimated Duration:** 
 * **FTE:**  
 * **Costs:** 
@@ -190,7 +190,7 @@ Repos for further reference
 | 1f. | Workflow Composer: Pipe Operator | Operator Interface to connect other operators |
 
 
-### Milestone 5 — Workflow Composer - Phase 2
+### Milestone 5 — Workflow Composer - Part 2
 * **Estimated Duration:** 
 * **FTE:**  
 * **Costs:** 
