@@ -173,6 +173,9 @@ Repos for further reference
 | 2b. | Substrate Event Feed: Event Source Registration | Integrate with DB service - CouchDB, Save Unique ID in DB for topic provided through Event Manager: Event Source Registration | 
 
 ## Future Plans
+
+We have planned immediate grant as second phase of our development (Draft with Complete deliverables can be found here https://github.com/MuhammedIrfan/Open-Grants-Program/blob/master/applications/project_aurras_mvp.md)
+
 Immediate Plans in the timeline Includes
 * Develop full fledge system
 * Implement Custom Version of Substrate Archive
