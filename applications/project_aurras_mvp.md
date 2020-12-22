@@ -2,7 +2,7 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project Name:** Project Aurras - MVP - Phase 1
+* **Project Name:** Project Aurras - MVP
 * **Team Name:** HugoByte AI Labs Private Limited
 * **Payment Address:** 18DYHK9UTqfjDHZx4qYT5Gu5zqNuhn1NEZ
 
