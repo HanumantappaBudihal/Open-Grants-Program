@@ -48,7 +48,7 @@ Workflow composer consists of an async Rust library to compose multiple triggers
 This is the end user facing component to utilize the workflow. This component comprises of a backend application which is responsible for user registration, selecting the workflow, managing / creating workflow using friendly APIs, providing input parameters. API gateway / Machine gateway where the external world can connect to the Aurras system.  
 
 ### Ecosystem Fit
-We have identified many great teams had to build their own implementation of event listeners/monitoring tools. We intend to make this aspect easier for the community to avoid most of the boilerplate so that it can just focus on workflow actions/task which is related to their project.
+We have identified many great teams had to build their own implementation of event listeners/monitoring tools. We intend to make this aspect easier for the community to avoid most of the boilerplate so that they can just focus on workflow actions/tasks which are related to their project.
 
 * https://github.com/playproject-io/datdot-service
 * https://github.com/open-web3-stack/guardian
@@ -222,7 +222,7 @@ Repos for further reference
 
 ## Future Plans
 Immediate Plans in the timeline Includes
-* Develop full fledged system
+* Develop full fledge system
 * Implement Custom Version of Substrate Archive
 * Add more operators
 * Add Analytics and Monitoring  
