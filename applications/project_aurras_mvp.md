@@ -133,8 +133,9 @@ Repos for further reference
 | 1a. | Substrate Event Feed: Configuration | Reading Configuration based on Environment, Override Configuration if Environment Variables provided, Configrations for Chain endpoint Sections and Methods from extrinsic to Exclude, types, Openwhisk Endpoint, Openwhisk Auth Key, Trigger Endpoint, Kafka Topic and Brokers |
 | 1b. | Substrate Event Feed: Chain Module | Connects to the chain, Add custom type to chain intialization if provided, Subscribes to system.events |  
 | 1c. | Substrate Event Feed: Event Module | Filters Events based on excludes provided, Post Events to trigger Endpoint |  
-| 1d. | Substrate Event Feed: Docker Image | Dockerfile for Containerization  |  
-| 1e. | Substrate Event Feed: Docker Compose Configuration | Docker Compose Configuration  |
+| 1d. | Substrate Event Feed: Docker Image | Dockerfile for Substrate Event Feed Package  |  
+| 1e. | Substrate Event Feed: Docker Compose Configuration | Add Substrate Event Feed Service in Docker Compose Configuration  |
+| 1f. | Substrate Event Feed: Helm Chart Configuration | Helm Chart Configuration for Substrate Event Feed for Kubernetes  |
 | 2. | Event Manager: Event Post Action | Minimal JS Implementation of Event POST Action with Payload as Kafka Topic, Broker and Event Data such as section, method and Event Payload |
 
 
@@ -148,13 +149,15 @@ Repos for further reference
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Kafka and Zookeeper Deployment guide, wskdeploy guide, Readme file |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests |  
-| 1. | Kafka Provider: Fork | Fork Existing [openwhisk-package-kafka](https://github.com/apache/openwhisk-package-kafka/) |
+| 1a. | Kafka Provider: Fork | Fork Existing [openwhisk-package-kafka](https://github.com/apache/openwhisk-package-kafka/) |
+| 1b. | Kafka Provider: Helm Chart Configuration | Helm Chart Configuration for Kafka Provider for Kubernetes |
 | 2. | Database Service | Implement DB Service, DB Integration, Connect DB provided through configuration variables, Dockerfile for Containerization, Docker Compose Configuration |
 | 3a. | Event Manager: Event Source Registration | Integrate with DB service - CouchDB, Register Source with Chain Name, Chain Specification, Create Unique topic for provided Section-Method, Return created topics - Section-Method Map |
 | 3b. | Event Manager: Kafka provider feed action | Integrate with DB service - CouchDB, Add CREATE, READ, UPDATE, DELETE lifecycle methods for trigger, Validate parameters (Section-Method, broker, isJSONData, isBinaryValue, isBinaryKey), Get unique topic from DB using Section-Method param,Record topic and related trigger to DB on CREATE lifecycle |
 | 3c. | Event Manager: Deployment Config | Deployment Config for [wskdeploy](https://github.com/apache/openwhisk-wskdeploy) tool | 
 | 3d. | Event Manager: Intermediate Container | Dockerfile for Containerization, Container with wsk cli and wskdeploy util, Script to add Openwhisk auth key, Deploy Openwhisk Actions and Create Triggers and Rules |
-| 3e. | Event Manager: Docker Compose Configuration | Docker Compose Configuration |
+| 3e. | Event Manager: Docker Compose Configuration | Docker Compose Configuration for Event Manager: Intermediate Container |
+| 3f. | Event Manager: Helm Chart Configuration | Helm Chart Configuration for Event Manager: Intermediate Container for Kubernetes |
 
 ### Milestone 3 — Event Manager - Part 2
 * **Estimated Duration:** 20 Days
