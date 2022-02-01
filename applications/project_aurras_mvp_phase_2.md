@@ -63,10 +63,10 @@ Similar projects
 
 What makes us different is
 
-As a part of Web 3 Community and Ecosystem
+As a part of the Web 3 Community and Ecosystem
 * First class support to connect blockchains
-* Deployment and definition of workflows will be done through easy to write YAML configuration.
-* Workflow tasks can be written in multiple languages - NodeJS, Go, Java, Scala, PHP, Python, Ruby, Ballerina, .NET and Rust (We prefer and Recommend WASM compatible Rust)
+* Deployment and definition of workflows will be done through easy-to-write YAML configuration.
+* Workflow tasks can be written in multiple languages - NodeJS, Go, Java, Scala, PHP, Python, Ruby, Ballerina, .NET and Rust (We prefer and recommend WASM compatible Rust)
 * First class support to MQTT Endpoints.  
 
 ## Team :busts_in_silhouette:
@@ -74,7 +74,7 @@ As a part of Web 3 Community and Ecosystem
 ### Team members
 * Muhammed Irfan K - Team Lead, Fullstack Developer, CTO & Co-Founder - HugoByte AI Labs
 * Hanumantappa Budihal - CIO & Solutions Architect, DevOps - HugoByte AI Labs	
-* Shreyas Kura Subramanya - Development Team Lead at HugoByte AI Labs Pvt Ltd
+* Shreyas Kura Subramanya - Development Team Lead - HugoByte AI Labs Pvt Ltd
 
 ### Contact
 * **Contact Name:** Muhammed Irfan K
