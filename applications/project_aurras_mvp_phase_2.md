@@ -46,10 +46,10 @@ Event trigger manager is composed of multiple actions including using a database
 Workflow composer consists of an async Rust library to compose multiple triggers, deployment configuration generator, and whisk deployment tool. For creating the workflow, the only input is the configuration file which is a YAML file. The workflow composition is laid out in the YAML which in turn takes care of the deployment and composing the triggers. Once a workflow is deployed to a namespace it creates a specific topic unique workflow id in Kafka. Workflow configuration comprises the input URL of workflow tasks, primarily GitHub repo, the sequence of processing tasks, and argument structure. Arguments must match the task input parameters.  
 
 4. **Web API Gateway and Backend Service**   
-This is the end user facing component to utilize the workflow. This component comprises of a backend application which is responsible for user registration, selecting the workflow, managing / creating workflow using friendly APIs, providing input parameters. API gateway / Machine gateway where the external world can connect to the Aurras system.  
+TODO : Need to add the description 
 
 ### Ecosystem Fit
-We have identified many great teams had to build their own implementation of event listeners/monitoring tools. We intend to make this aspect easier for the community to avoid most of the boilerplate so that they can just focus on workflow actions/tasks which are related to their project.
+TODO : Need to add the description
 
 * https://github.com/playproject-io/datdot-service
 * https://github.com/open-web3-stack/guardian
@@ -89,26 +89,31 @@ HugoByte AI Labs Private limited
 CIN: U72900KA2020PTC140106
 ### Team's experience
 
-* Muhammed Irfan K  
+**Muhammed Irfan K**  
 Muhammed Irfan K is a strategic thinker and implementer of innovative ideas with an emphasis on educating and bringing back privacy to the people. Having Co-Founded HugoByte AI Labs and Serving as CTO. He envisions a world where AI is open, distributed, and democratized by building a decentralized infrastructure and policy framework to regulate it. He has extensive experience in designing and building Highly Scalable Enterprise Architecture, Leading Team, Full-Stack Development, Microservices, Machine Learning.
 
-* Hanumantappa Budihal  
+**Hanumantappa Budihal**  
 Hanumantappa Budihal is the Chief Information Officer and Solutions Architect at HugoByte AI Labs. He has worked for 4 years as an Application Developer and Azure DevOps Engineer. He is adept at designing, describing and managing the solution engineering for specific business problems by finding the best tech solution by analysing all possibilities. He is proficient in defining features, phases, and solution requirements. He is currently invested in decentralising the blockchain space and is working on the enhancement of the Blockchain Transmission Protocol to achieve it. 
+
 His technical skills include ML, AI ,Blockchain, .NET Core Framework, Azure DevOps, SQL Developer, ASP .NET MVC, REST Web API, WPF, Microsoft Azure, Cognitive Services, Algorithms Design for a complex business requirement, and Watson Discovery, with good knowledge of Application Architecture and Design pattern implementation and data analysis skills. He has also worked on cognitive application development using various IBM Bluemix services such as Conversation, Natural language understanding, Watson discovery, and has developed chatbots using Api.ai and Microsoft bot framework. As a testimony to his exemplary technical skills, he is now pursuing his MTech in computer science at IIT Madras.
+
+**Shreyas Kura Subramanya**  
+TODO : Need to add the description 
+ 
  
 ### Team Code Repos
 Source codes will reside in
 * https://github.com/hugobyte
 
 Repos for further reference
-* https://github.com/i7326/hackusama ([Hackusama Submission](https://devpost.com/software/contact-tracing-chain))
 * https://github.com/MuhammedIrfan
 * https://github.com/HanumantappaBudihal  
+* https://github.com/shreyasbhat0
 
 ### Team Profiles
-* Dr. C. Pethuru Raj Ph.D - https://sweetypeterdarren.wixsite.com/pethuru-raj-books  
 * Muhammed Irfan K - https://www.linkedin.com/in/muhammed-irfan-k  
 * Hanumantappa Budihal - https://www.linkedin.com/in/hanumantappa-budihal/  
+* Shreyas Kura Subramanya - https://www.linkedin.com/in/shreyas-ks/
 
 ## Development Roadmap :nut_and_bolt: 
 
