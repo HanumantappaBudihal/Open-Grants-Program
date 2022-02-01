@@ -92,7 +92,7 @@ CIN: U72900KA2020PTC140106
 ### Team's experience
 
 **Muhammed Irfan K**  
-Muhammed Irfan K is a strategic thinker and implementer of innovative ideas with an emphasis on educating and bringing back privacy to the people. Having Co-Founded HugoByte AI Labs and Serving as CTO. He envisions a world where AI is open, distributed, and democratized by building a decentralized infrastructure and policy framework to regulate it. He has extensive experience in designing and building Highly Scalable Enterprise Architecture, Leading Team, Full-Stack Development, Microservices, Machine Learning.
+Muhammed Irfan K is a strategic thinker and implementer of innovative ideas with an emphasis on educating and bringing back privacy to the people. Having co-founded HugoByte AI Labs and serving as its CTO, he envisions a world where AI is open, distributed and democratized by building a decentralized infrastructure and policy framework to regulate it. He has extensive experience in designing and building Highly Scalable Enterprise Architecture, leading high-impact teams, Full-Stack Development, Microservices and Machine Learning.
 
 **Hanumantappa Budihal**  
 Hanumantappa Budihal is the Chief Information Officer and Solutions Architect at HugoByte AI Labs. He has worked for 4 years as an Application Developer and Azure DevOps Engineer. He is adept at designing, describing and managing the solution engineering for specific business problems by finding the best tech solution by analysing all possibilities. He is proficient in defining features, phases, and solution requirements. He is currently invested in decentralising the blockchain space and is working on the enhancement of the Blockchain Transmission Protocol to achieve it. 
@@ -100,7 +100,7 @@ Hanumantappa Budihal is the Chief Information Officer and Solutions Architect at
 His technical skills include ML, AI ,Blockchain, .NET Core Framework, Azure DevOps, SQL Developer, ASP .NET MVC, REST Web API, WPF, Microsoft Azure, Cognitive Services, Algorithms Design for a complex business requirement, and Watson Discovery, with good knowledge of Application Architecture and Design pattern implementation and data analysis skills. He has also worked on cognitive application development using various IBM Bluemix services such as Conversation, Natural language understanding, Watson discovery, and has developed chatbots using Api.ai and Microsoft bot framework. As a testimony to his exemplary technical skills, he is now pursuing his MTech in computer science at IIT Madras.
 
 **Shreyas Kura Subramanya**  
-TODO : Need to add the description 
+Shreyas is an experienced software developer with great zeal in implementing solutions in the software doamin. He is skilled in Blockchain, smart contracts, ethical hacking, RUST and GOlang. He currently is the Development Tech Lead at HugoByte AI Labs and is instrumental in driving the team to great success. He obtained his Bachelor's degree focused in Computer Science from Bapuji Institute of Engineering & Technology, Davanegere. 
  
  
 ### Team Code Repos
