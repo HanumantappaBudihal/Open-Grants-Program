@@ -1,4 +1,3 @@
-TODO : need to add the content
 # Open Grant Proposal
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
@@ -30,12 +29,10 @@ Aurras as a part of Substrate / Kusama / Polkadot / Web 3 Ecosystem
 #### Technologies
 1. [Apache OpenWhisk](https://openwhisk.apache.org) is an open source, distributed Serverless platform that executes functions (fx) in response to events at any scale. OpenWhisk manages the infrastructure, servers and scaling using Docker containers. The OpenWhisk platform supports a programming model in which developers write functional logic (called Actions), in any supported programming language, that can be dynamically scheduled and run in response to associated events (via Triggers) from external sources (Feeds) or from HTTP requests
 2. [Apache Kafka](https://kafka.apache.org) is an open-source distributed event streaming platform. Kafka works well as a replacement for a more traditional message broker. Message brokers are used for a variety of reasons (to decouple processing from data producers, to buffer unprocessed messages, etc.). In comparison to most messaging systems, Kafka has better throughput, built-in partitioning, replication, and fault-tolerance which makes it a good solution for large scale message processing applications.
-3. Docker 
-4. Substrate
+3. [Tackle box](https://robcxyz.github.io/tackle-box/) is a declarative DSL for building modular utilities and code generators. Tool is plugins based and can easily be extended by writing additional hooks or importing external providers creating a web of interoperable CLIs.
+4. Docker 
 5. Rust  
 6. Go
-
-TODO : Need to add more info about the technologies
 
 #### Components
 **1.Event Sources (Substrate Event Feed)**  
@@ -127,15 +124,15 @@ Repos for further reference
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Description** Development of Project Aurras - MVP - Phase 2
-* **Total Estimated Duration:** 320 Person Days
-* **Full-time equivalent (FTE):**  Milestone 4 - 1.5 ( TODO : Need to edit); Milestone 5 and 6 - 3 (TODO : Need to edit)
-* **Total Costs:** 1.16 BTC (TODO : Need to edit)
+* **Description** Development of Project Aurras - MVP - Phase 2 
+* **Total Estimated Duration:** 240 Person Days
+* **Full-time equivalent (FTE):** 4
+* **Total Costs:** 38400 USD 
 
-### Milestone 4 — Workflow Composer - Part 1
-* **Estimated Duration:** TODO
-* **FTE:**  
-* **Costs:** 
+### Milestone 1 — Workflow Composer - Part 1
+* **Estimated Duration:** 30 Working days
+* **FTE:** 4 
+* **Costs:** 19200 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -154,10 +151,10 @@ Repos for further reference
 | 3c. | Workflow Provider for Tackle Box  | Interface to connect other operators and tasks |
 
 
-### Milestone 5 — Workflow Composer - Part 2
-* **Estimated Duration:** TODO
-* **FTE:**  
-* **Costs:** 
+### Milestone 2 — Workflow Composer - Part 2
+* **Estimated Duration:** 17 Working days
+* **FTE:**  4
+* **Costs:** 10880 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -168,10 +165,10 @@ Repos for further reference
 | 1b. | Workflow Composer: Derive Macro | To build Rust code from the Struct created from the YAML file |
 
 
-### Milestone 6 — Web API/Backend
-* **Estimated Duration:**  TODO
-* **FTE:**  
-* **Costs:** 
+### Milestone 3 — Web API/Backend
+* **Estimated Duration:**  13 Working days
+* **FTE:** 4 
+* **Costs:** 8320 USD 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -184,8 +181,6 @@ Repos for further reference
 
 
 ## Future Plans
-
-We have planned immediate grant as second phase of our development (Draft with Complete deliverables can be found here https://github.com/MuhammedIrfan/Open-Grants-Program/blob/master/applications/project_aurras_mvp.md)
 
 Immediate Plans in the timeline Includes
 * Develop full fledge system
