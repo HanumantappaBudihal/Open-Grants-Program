@@ -76,7 +76,7 @@ As a part of the Web 3 Community and Ecosystem
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Muhammed Irfan K - Team Lead, Fullstack Developer, CTO & Co-Founder - HugoByte AI Labs
+* Muhammed Irfan K - CTO & Co-Founder - HugoByte AI Labs
 * Hanumantappa Budihal - CIO & Solutions Architect, DevOps - HugoByte AI Labs	
 * Shreyas Kura Subramanya - Development Team Lead - HugoByte AI Labs Pvt Ltd
 
