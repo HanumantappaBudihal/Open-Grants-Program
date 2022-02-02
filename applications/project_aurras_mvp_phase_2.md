@@ -77,7 +77,7 @@ As a part of the Web 3 Community and Ecosystem
 
 ### Team members
 * Muhammed Irfan K - CTO & Co-Founder - HugoByte AI Labs
-* Hanumantappa Budihal - CIO & Solutions Architect, DevOps - HugoByte AI Labs	
+* Hanumantappa Budihal - CIO, Project Manager & Solutions Architect, DevOps - HugoByte AI Labs	
 * Shreyas Kura Subramanya - Development Team Lead - HugoByte AI Labs Pvt Ltd
 
 ### Contact
